@@ -19,6 +19,14 @@ class Routes extends Component {
         <Nav />
         <Switch>
           <Route exact path="/" component={Main} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/culture" component={Culture} />
+          <Route exact path="/article" component={Article} />
+          <Route exact path="/event" component={Event} />
+          <Route exact path="/good" component={Good} />
+          <Route exact path="/multimedia" component={Multimedia} />
+          <Route exact path="/news" component={News} />
+          <Route exact path="/report" component={Report} />
         </Switch>
       </Router>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 
 function Culture() {
-  return <div></div>;
+  return <div>culture</div>;
 }
 
 export default Culture;

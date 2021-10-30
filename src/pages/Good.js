@@ -1,7 +1,7 @@
 import React from "react";
 
 function Good() {
-  return <div></div>;
+  return <div>good</div>;
 }
 
 export default Good;

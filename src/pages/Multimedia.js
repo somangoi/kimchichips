@@ -1,7 +1,7 @@
 import React from "react";
 
 function Multimedia() {
-  return <div></div>;
+  return <div>multi</div>;
 }
 
 export default Multimedia;
