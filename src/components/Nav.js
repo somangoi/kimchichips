@@ -18,7 +18,8 @@ const NavContainer = styled.div`
 `;
 
 const Logo = styled.div`
-  width: 100px;
+  width: 130px;
+  padding: 10px;
 
   img {
     width: 100%;
