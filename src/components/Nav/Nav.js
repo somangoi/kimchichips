@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Sidebar from "./Sidebar";
 
 function Nav() {
   return (
-    <NavContainer>
-      <Logo>
-        <img src="/image/logo.png" alt="logo" />
-      </Logo>
-      <Menu>
-        <i class="fas fa-bars" />
-      </Menu>
-    </NavContainer>
+    <>
+      <NavContainer>
+        <Logo>
+          <img src="/image/logo.png" alt="logo" />
+        </Logo>
+        <Menu>
+          <i class="fas fa-bars" />
+        </Menu>
+      </NavContainer>
+      <Sidebar />
+    </>
   );
 }
 
