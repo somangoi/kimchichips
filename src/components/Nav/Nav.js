@@ -7,22 +7,33 @@ function Nav() {
       <Logo>
         <img src="/image/logo.png" alt="logo" />
       </Logo>
+      <Menu>
+        <i class="fas fa-bars" />
+      </Menu>
     </NavContainer>
   );
 }
 
 const NavContainer = styled.div`
+  ${({ theme }) => theme.displayFlex("space-between", "center")};
   width: 100%;
-  height: 60px;
   background-color: ${({ theme }) => theme.colorBackground};
 `;
 
 const Logo = styled.div`
-  width: 100px;
+  width: 140px;
+  padding: 10px;
 
   img {
     width: 100%;
     object-fit: cover;
+  }
+`;
+
+const Menu = styled.div`
+  padding-right: 20px;
+  i {
+    font-size: 120%;
   }
 `;
 export default Nav;
