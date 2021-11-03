@@ -10,7 +10,7 @@ import Multimedia from "./pages/Multimedia";
 import News from "./pages/News";
 import Report from "./pages/Report";
 
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 
 class Routes extends Component {
   render() {
