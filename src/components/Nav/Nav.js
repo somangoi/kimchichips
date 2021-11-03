@@ -32,5 +32,8 @@ const Logo = styled.div`
 
 const Menu = styled.div`
   padding-right: 20px;
+  i {
+    font-size: 120%;
+  }
 `;
 export default Nav;
