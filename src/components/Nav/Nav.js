@@ -6,6 +6,7 @@ function Nav() {
   const [isSidebarShown, setIsSidebarShown] = useState(false);
 
   const sidebarOpen = () => {
+    console.log("clicked", isSidebarShown);
     setIsSidebarShown(!isSidebarShown);
   };
 

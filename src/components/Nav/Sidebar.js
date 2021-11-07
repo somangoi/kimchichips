@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-function Sidebar(sidebarOpen) {
+function Sidebar() {
   return (
     <SidebarContainer>
       <SidebarBox>
         <CloseBtn>
-          <i onclick={sidebarOpen} className="fas fa-times" />
+          <Button>
+            <i className="fas fa-times" />
+          </Button>
         </CloseBtn>
         <ul>
           <Title>Home</Title>
@@ -48,9 +50,17 @@ const SidebarBox = styled.div`
 `;
 
 const CloseBtn = styled.div`
-  font-size: 2rem;
+  ${({ theme }) => theme.displayFlex("flex-end", "center")};
+  padding: 10px;
+  margin-bottom: 30px;
+`;
+
+const Button = styled.div`
   text-align: right;
-  margin-bottom: 50px;
+
+  i {
+    font-size: 2rem;
+  }
 `;
 
 const Title = styled.li`
